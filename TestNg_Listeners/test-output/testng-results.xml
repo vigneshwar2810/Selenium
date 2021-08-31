@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Test Suite" duration-ms="82871" started-at="2021-08-31T06:53:11Z" finished-at="2021-08-31T06:54:34Z">
+    <groups>
+    </groups>
+    <test name="Test Cases" duration-ms="82871" started-at="2021-08-31T06:53:11Z" finished-at="2021-08-31T06:54:34Z">
+      <class name="listeners.PHP_Travels">
+        <test-method status="PASS" signature="f()[pri:0, instance:listeners.PHP_Travels@b3d7190]" name="f" duration-ms="82806" started-at="2021-08-31T12:23:11Z" finished-at="2021-08-31T12:24:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+      </class> <!-- listeners.PHP_Travels -->
+    </test> <!-- Test Cases -->
+  </suite> <!-- Test Suite -->
+</testng-results>

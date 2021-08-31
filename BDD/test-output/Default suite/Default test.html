@@ -1,0 +1,265 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Aug 25 18:31:52 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>8 seconds (8605 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login to the Application.", "Optional[Order Items from PHP Travels Application.]"</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: session not created
+from disconnected: received Inspector.detached event
+  (Session info: chrome=92.0.4515.159)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;LP-PF2Y1DJV&apos;, ip: &apos;192.168.0.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x007C2A33+2501171]
+	Ordinal0 [0x0075D1C1+2085313]
+	Ordinal0 [0x00661FA8+1056680]
+	Ordinal0 [0x00655474+1004660]
+	Ordinal0 [0x006550B6+1003702]
+	Ordinal0 [0x006547FA+1001466]
+	Ordinal0 [0x0065398D+997773]
+	Ordinal0 [0x00653C46+998470]
+	Ordinal0 [0x00653535+996661]
+	Ordinal0 [0x0065E0C4+1040580]
+	Ordinal0 [0x006534F1+996593]
+	Ordinal0 [0x00654416+1000470]
+	Ordinal0 [0x0065398D+997773]
+	Ordinal0 [0x00653C46+998470]
+	Ordinal0 [0x00653535+996661]
+	Ordinal0 [0x0065C13A+1032506]
+	Ordinal0 [0x006534F1+996593]
+	Ordinal0 [0x00654416+1000470]
+	Ordinal0 [0x0065398D+997773]
+	Ordinal0 [0x00653C46+998470]
+	Ordinal0 [0x00653535+996661]
+	Ordinal0 [0x00659FC9+1023945]
+	Ordinal0 [0x006534F1+996593]
+	Ordinal0 [0x00654416+1000470]
+	Ordinal0 [0x0065398D+997773]
+	Ordinal0 [0x00653C46+998470]
+	Ordinal0 [0x00653535+996661]
+	Ordinal0 [0x006592EC+1020652]
+	Ordinal0 [0x006534F1+996593]
+	Ordinal0 [0x00654416+1000470]
+	Ordinal0 [0x0065398D+997773]
+	Ordinal0 [0x00653C46+998470]
+	Ordinal0 [0x00653535+996661]
+	Ordinal0 [0x0064F10D+979213]
+	Ordinal0 [0x006534F1+996593]
+	Ordinal0 [0x00653290+995984]
+	Ordinal0 [0x00653029+995369]
+	Ordinal0 [0x006631C0+1061312]
+	Ordinal0 [0x006AA93B+1354043]
+	Ordinal0 [0x006A960A+1349130]
+	Ordinal0 [0x006A551B+1332507]
+	Ordinal0 [0x00681D74+1187188]
+	Ordinal0 [0x00682BD9+1190873]
+	GetHandleVerifier [0x0093EFE6+1504438]
+	GetHandleVerifier [0x009EDDA5+2220661]
+	GetHandleVerifier [0x00845589+481881]
+	GetHandleVerifier [0x00844639+477961]
+	Ordinal0 [0x007628BD+2107581]
+	Ordinal0 [0x00766728+2123560]
+	Ordinal0 [0x00766862+2123874]
+	Ordinal0 [0x0076FA81+2161281]
+	BaseThreadInitThunk [0x76486359+25]
+	RtlGetAppContainerNamedObjectPath [0x77C287A4+228]
+	RtlGetAppContainerNamedObjectPath [0x77C28774+180]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at stepdefinition.Steps.launch_the_Application(Steps.java:20)
+	at ?.Launch the Application.(file:///C:/Users/vigneshwar.k/workspace/BDD/Feature/Login.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1890266440", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1890266440'><pre>org.openqa.selenium.SessionNotCreatedException: session not created
+from disconnected: received Inspector.detached event
+  (Session info: chrome=92.0.4515.159)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;LP-PF2Y1DJV&apos;, ip: &apos;192.168.0.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x007C2A33+2501171]
+	Ordinal0 [0x0075D1C1+2085313]
+	Ordinal0 [0x00661FA8+1056680]
+	Ordinal0 [0x00655474+1004660]
+	Ordinal0 [0x006550B6+1003702]
+	Ordinal0 [0x006547FA+1001466]
+	Ordinal0 [0x0065398D+997773]
+	Ordinal0 [0x00653C46+998470]
+	Ordinal0 [0x00653535+996661]
+	Ordinal0 [0x0065E0C4+1040580]
+	Ordinal0 [0x006534F1+996593]
+	Ordinal0 [0x00654416+1000470]
+	Ordinal0 [0x0065398D+997773]
+	Ordinal0 [0x00653C46+998470]
+	Ordinal0 [0x00653535+996661]
+	Ordinal0 [0x0065C13A+1032506]
+	Ordinal0 [0x006534F1+996593]
+	Ordinal0 [0x00654416+1000470]
+	Ordinal0 [0x0065398D+997773]
+	Ordinal0 [0x00653C46+998470]
+	Ordinal0 [0x00653535+996661]
+	Ordinal0 [0x00659FC9+1023945]
+	Ordinal0 [0x006534F1+996593]
+	Ordinal0 [0x00654416+1000470]
+	Ordinal0 [0x0065398D+997773]
+	Ordinal0 [0x00653C46+998470]
+	Ordinal0 [0x00653535+996661]
+	Ordinal0 [0x006592EC+1020652]
+	Ordinal0 [0x006534F1+996593]
+	Ordinal0 [0x00654416+1000470]
+	Ordinal0 [0x0065398D+997773]
+	Ordinal0 [0x00653C46+998470]
+	Ordinal0 [0x00653535+996661]
+	Ordinal0 [0x0064F10D+979213]
+	Ordinal0 [0x006534F1+996593]
+	Ordinal0 [0x00653290+995984]
+	Ordinal0 [0x00653029+995369]
+	Ordinal0 [0x006631C0+1061312]
+	Ordinal0 [0x006AA93B+1354043]
+	Ordinal0 [0x006A960A+1349130]
+	Ordinal0 [0x006A551B+1332507]
+	Ordinal0 [0x00681D74+1187188]
+	Ordinal0 [0x00682BD9+1190873]
+	GetHandleVerifier [0x0093EFE6+1504438]
+	GetHandleVerifier [0x009EDDA5+2220661]
+	GetHandleVerifier [0x00845589+481881]
+	GetHandleVerifier [0x00844639+477961]
+	Ordinal0 [0x007628BD+2107581]
+	Ordinal0 [0x00766728+2123560]
+	Ordinal0 [0x00766862+2123874]
+	Ordinal0 [0x0076FA81+2161281]
+	BaseThreadInitThunk [0x76486359+25]
+	RtlGetAppContainerNamedObjectPath [0x77C287A4+228]
+	RtlGetAppContainerNamedObjectPath [0x77C28774+180]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at stepdefinition.Steps.launch_the_Application(Steps.java:20)
+	at ?.Launch the Application.(file:///C:/Users/vigneshwar.k/workspace/BDD/Feature/Login.feature:3)
+</pre></div></td>
+<td>8</td>
+<td>runner.Runner@1134affc</td></tr>
+</table><p>
+</body>
+</html>
